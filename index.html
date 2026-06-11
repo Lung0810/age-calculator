@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Age Calculator</h1>
+
+        <div class="input-group">
+            <label for="birthdate">Select Birthdate</label>
+            <input type="text" id="birthdate" placeholder="Click to select date...">
+            <div id="error-msg" class="error">Please select a valid date in the past.</div>
+        </div>
+
+        <button id="calculate-btn">Calculate Age</button>
+
+        <div id="result">
+            <div class="age-item"><span id="years" class="age-number">--</span>Years</div>
+            <div class="age-item"><span id="months" class="age-number">--</span>Months</div>
+            <div class="age-item"><span id="days" class="age-number">--</span>Days</div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
